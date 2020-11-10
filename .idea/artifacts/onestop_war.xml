@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="onestop:war">
+    <output-path>$PROJECT_DIR$/server/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>onestop</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="onestop-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="onestop:war exploded" />
+    </root>
+  </artifact>
+</component>
