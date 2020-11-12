@@ -4,28 +4,23 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "test_table")
+@Table(name = "users")
 public class User {
     @Id
-    @Column(name = "test_id")
-    private int id;
-
-    @Column(name = "test_name")
-    private String user;
-
-    @Column(name = "test_pass")
-    private String pass;
+    @Column(name = "USERNAME")
+    private String username;
 
 
-    public int getId() {
-        return this.id;
+    @Column(name = "BOOKMARK")
+    private boolean bookmarks;
+
+
+
+    public String getUsername() {
+        return this.username;
     }
 
-    public String getUser() {
-        return this.user;
-    }
-
-    public String getPass() {
-        return this.pass;
+    public boolean getBookmarks() {
+        return this.bookmarks;
     }
 }

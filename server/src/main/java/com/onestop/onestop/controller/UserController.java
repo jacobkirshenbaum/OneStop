@@ -25,4 +25,10 @@ public class UserController {
         userRepository.findAll().forEach(users::add);
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
+
+    @CrossOrigin
+    @PostMapping(path="/save")
+    public void saveUser(@RequestBody User user) {
+        userRepository.save(user);
+    }
 }
