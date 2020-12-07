@@ -24,6 +24,7 @@ public class Bookmark {
     @Column
     private String url;
 
+
     public int getId() {
         return this.id;
     }
@@ -39,4 +40,17 @@ public class Bookmark {
     public String getUrl() {
         return this.url;
     }
+
+    public void setUsername(String newUsername) {
+        this.username = newUsername;
+    }
+
+    public void setBookmarkName(String newBookmarkName) {
+        this.bookmarkName = newBookmarkName;
+    }
+
+    public void setUrl(String newUrl) {
+        this.url = newUrl;
+    }
+
 }

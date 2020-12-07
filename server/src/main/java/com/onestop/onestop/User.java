@@ -11,8 +11,8 @@ public class User {
     private String username;
 
 
-    @Column(name = "BOOKMARK")
-    private boolean bookmarks;
+    @Column(name = "PASSWORD")
+    private String password;
 
 
 
@@ -20,7 +20,15 @@ public class User {
         return this.username;
     }
 
-    public boolean getBookmarks() {
-        return this.bookmarks;
+    public String getPassword() {
+        return this.password;
+    }
+
+    public void setUsername(String newUsername) {
+        this.username = newUsername;
+    }
+
+    public void setPassword(String newPassword) {
+        this.password = newPassword;
     }
 }
